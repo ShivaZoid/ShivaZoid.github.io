@@ -2,7 +2,7 @@
 <html lang="en-US">
     <head>
         <title>Yuri Burakh</title>
-        <link rel="shortcut icon" type="image/png" href="ShivaZoid.github.io\favicon.ico">
+        <link rel="shortcut icon" type="image/png" href="https://github.com/ShivaZoid/ShivaZoid.github.io/blob/main/favicon.ico">
         <style>
           :root {
             --colorBackground: 255, 255, 255;
@@ -53,15 +53,38 @@
             margin: 1rem 0;
           }
 
-          header h1 {
-            font-size: 2rem;
-            text-align: center;
-            margin: 1rem 0;
-          }
-
           header p {
             text-align: center;
             text-transform: uppercase;
+          }
+
+          @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+          h4 {
+          border-right: solid 3px rgba(0,255,0,.75);
+          white-space: nowrap;
+          overflow: hidden;
+          font-family: "Share Tech Mono", monospace;
+          font-size: 28px;
+          color: rgba(255,255,255,.70);
+        }
+
+          /* Animation */
+          h4  {
+            animation: animated-text 4s steps(29,end) 1s 1 normal both,
+                      animated-cursor 600ms steps(29,end) infinite;
+          }
+
+          /* text animation */
+          @keyframes animated-text{
+            from{width: 0;}
+            to{width: 293px;}
+          }
+
+          /* cursor animations */
+          @keyframes animated-cursor{
+            from{border-right-color: rgba(0,255,0,.75);}
+            to{border-right-color: transparent;}
           }
 
           main {
@@ -77,9 +100,7 @@
   <body>
     <main>
       <header>
-        <h1> </h1>
         <p>Python developer</p>
-        <h1> </h1>
       </header>
       <section>
         <div id="text">
@@ -89,14 +110,9 @@
           <p>- Django/DRF</p>
           <p>- Git</p>
           <p>- HTML5</p>
-          <p>
-            Check out my
-            <a href="https://github.com/ShivaZoid" rel="noopener"> Github</a>
-          </p>
-          <p>
-            You can write to me in
-            <a href="https://t.me/ShivaZoid" rel="noopener"> Telegram</a>
-          </p>
         </div>
+      </section>
+      <h4>Check out my <a href="https://github.com/ShivaZoid" rel="noopener"> Github</a></h4>
     </main>
-</body></html>
+  </body>
+</html>
