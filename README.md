@@ -1,3 +1,3 @@
-# Сайт на github.io
+Сайт на github.io
 
 ### https://shivazoid.github.io/
